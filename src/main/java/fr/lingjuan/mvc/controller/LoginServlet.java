@@ -36,8 +36,8 @@ public class LoginServlet extends HttpServlet {
             {
                 System.out.println("Admin's Home");
 
-                HttpSession session = request.getSession(); //Creating a session
-                session.setAttribute("Admin", userName); //setting session attribute
+                HttpSession session = request.getSession();
+                session.setAttribute("Admin", userName); 
                 request.setAttribute("userName", userName);
 
                 request.getRequestDispatcher("/Admin.jsp").forward(request, response);
@@ -79,5 +79,5 @@ public class LoginServlet extends HttpServlet {
         {
             e2.printStackTrace();
         }
-    } //End of doPost()
+    } 
 }
