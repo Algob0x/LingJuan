@@ -16,27 +16,27 @@
 
             if (fullname==null || fullname=="")
             {
-                alert("N'oubliez pas d'écrire votre nom complet");
+                alert("N'oubliez pas d'Ã©crire votre nom complet");
                 return false;
             }
             else if (email==null || email=="")
             {
-                alert("N'oubliez pas d'écrire votre email");
+                alert("N'oubliez pas d'Ã©crire votre email");
                 return false;
             }
             else if (username==null || username=="")
             {
-                alert("N'oubliez pas d'écrire votre nom d'utilisateur);
+                alert("N'oubliez pas d'Ã©crire votre nom d'utilisateur");
                 return false;
             }
             else if(password.length<6)
             {
-                alert("Votre mot de passe doit faire au moins 6 caractères.");
+                alert("Votre mot de passe doit faire au moins 6 caractÃ¨res.");
                 return false;
             }
             else if (password!=conpassword)
             {
-                alert("Les deux mots de passe doivent être identiques");
+                alert("Les deux mots de passe doivent Ãªtre identiques");
                 return false;
             }
         }
