@@ -1,5 +1,4 @@
-# LingJuan
-Lingjuan's  project
+# LingJuan's project
 
 Pour importer le projet, vous devez télécharger puis utiliser Wildfly 26.
 Par la suite vous devrez également télécharger MySQL Workbench (si ce n'est pas déjà fait) et créer une base de donnée avec les mêmes arguments que dans DBConnection.Java
