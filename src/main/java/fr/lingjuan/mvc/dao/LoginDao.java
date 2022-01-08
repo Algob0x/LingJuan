@@ -53,6 +53,6 @@ public class LoginDao {
         {
             e.printStackTrace();
         }
-        return "Invalid user credentials";
+        return "Informations de connexion incorrectes";
     }
 }
