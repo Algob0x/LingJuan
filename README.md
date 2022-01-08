@@ -10,4 +10,5 @@ Il est très probable que vous ayez des erreurs "abominables" lors de vos tentat
 On les corrigera ensemble sur Zoom lors de notre prochain appel.
 
 Si d'ici là vous avez des questions, vous pouvez m'envoyer un message sur 微信. =)
+
 我的微信： @st16071999
