@@ -22,6 +22,11 @@
 Content de vous revoir <%=request.getAttribute("userName") %>
 
 <div style="text-align: right"><a href="<%=request.getContextPath()%>/LogoutServlet">Déconnexion</a></div>
+<h>Mes Informations</h>
+<%=request.getAttribute("userName") %>
+<%=request.getAttribute("fullName") %>
+<%=request.getAttribute("password") %>
+<%=request.getAttribute("email") %>
 
 </body>
 </html>

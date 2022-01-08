@@ -20,11 +20,12 @@ public class LoginServlet extends HttpServlet {
     {
         String userName = request.getParameter("username");
         String password = request.getParameter("password");
-
+        String fullName = request.getParameter("fullname");
         LoginBean loginBean = new LoginBean();
 
         loginBean.setUserName(userName);
         loginBean.setPassword(password);
+        loginBean.setFullName(fullName);
 
         LoginDao loginDao = new LoginDao();
 
@@ -60,6 +61,7 @@ public class LoginServlet extends HttpServlet {
                 session.setMaxInactiveInterval(10*60);
                 session.setAttribute("User", userName);
                 request.setAttribute("userName", userName);
+                request.setAttribute("fullName", fullName);
 
                 request.getRequestDispatcher("/User.jsp").forward(request, response);
             }

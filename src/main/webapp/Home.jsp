@@ -6,8 +6,8 @@
     <title>Enregistrement réussi</title>
 </head>
 <body>
-<center><h2>Vous êtes bien enregistré!</h2></center>
-<b>Connexion réussie</b>
+<center><h2>Votre compte a bien été créé =)</h2></center>
+<b>Enregistrement réussi</b>
 <br></br>
 <b>Veuillez vous <a href="http://localhost:8080/mvc-1.0-SNAPSHOT/Login.jsp">Connecter</a> pour continuer.</b>
 

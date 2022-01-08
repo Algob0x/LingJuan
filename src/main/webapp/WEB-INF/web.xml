@@ -11,6 +11,12 @@
     </servlet>
     <servlet>
         <description></description>
+        <display-name>RegisterMServlet</display-name>
+        <servlet-name>RegisterMServlet</servlet-name>
+        <servlet-class>fr.lingjuan.mvc.controller.RegisterMServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
         <display-name>LoginServlet</display-name>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>fr.lingjuan.mvc.controller.LoginServlet</servlet-class>
@@ -32,5 +38,9 @@
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterMServlet</servlet-name>
+        <url-pattern>/RegisterMServlet</url-pattern>
     </servlet-mapping>
 </web-app>

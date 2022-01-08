@@ -14,6 +14,8 @@ public class LoginDao {
     {
         String userName = loginBean.getUserName();
         String password = loginBean.getPassword();
+        String email = loginBean.getEmail();
+        String fullName = loginBean.getFullName();
 
         Connection con = null;
         Statement statement = null;
@@ -21,18 +23,22 @@ public class LoginDao {
 
         String userNameDB = "";
         String passwordDB = "";
+        String emailDB = "";
+        String fullNameDB = "";
         String roleDB = "";
 
         try
         {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            resultSet = statement.executeQuery("select username,password,role from users");
+            resultSet = statement.executeQuery("select username,password,role,email,fullname from users");
 
             while(resultSet.next())
             {
                 userNameDB = resultSet.getString("userName");
                 passwordDB = resultSet.getString("password");
+                fullNameDB = resultSet.getString("fullName");
+                emailDB = resultSet.getString("email");
                 roleDB = resultSet.getString("ROLE");
 
                 if(userName.equals(userNameDB) && password.equals(passwordDB) && roleDB.equals("Admin"))

@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Register</title>
+    <title>Register Moderator</title>
     <script>
         function validate()
         {
@@ -12,6 +12,7 @@
             var email = document.form.email.value;
             var username = document.form.username.value;
             var password = document.form.password.value;
+            var role = document.form.role.value;
             var conpassword= document.form.conpassword.value;
 
             if (fullname==null || fullname=="")
@@ -43,8 +44,8 @@
     </script>
 </head>
 <body>
-<center><h2>Lingjuan's Project</h2></center>
-<form name="form" action="RegisterServlet" method="post" onsubmit="return validate()">
+<center><h2>Création de compte Modérateur</h2></center>
+<form name="form" action="RegisterMServlet" method="post" onsubmit="return validate()">
     <table align="center">
         <tr>
             <td>Nom complet</td>
@@ -61,10 +62,6 @@
         <tr>
             <td>Mot de passe</td>
             <td><input type="password" name="password" /></td>
-        </tr>
-        <tr>
-            <td>Mot de passe</td>
-            <td><input type="password" name="conpassword" /></td>
         </tr>
         <tr>
             <td><%=(request.getAttribute("errMessage") == null) ? ""
